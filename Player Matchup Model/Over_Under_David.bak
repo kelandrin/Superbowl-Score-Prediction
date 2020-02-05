@@ -1,0 +1,976 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings>
+        <Position x="450" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">Poisson</Value>
+          <Value name="Y Var">Team Points</Value>
+          <Value name="X Vars">Year=False,Team=False,Week=False,Team Points=False,Opponent=False,RunTot_Team Passing Score=False,RunTot_Team Rec Score=False,RunTot_Team Rushing Score=False,Team Passing Score=False,Team Rec Score=False,Team Rushing Score=False,RunTot_Opp Safety Score=False,RunTot_Opp D Line Score=False,RunTot_Opp LB Score=False,RunTot_Opp CB Score=False,Opp Safety Score=False,Opp D Line Score=False,Opp Linebacker Score=False,Opp Cornerback Score=False,RunTot_1st Downs=False,RunTot_Total Yds=False,RunTot_Pass Yds=False,RunTot_Rush Yds=False,RunTot_TO=False,1st Downs=False,Total Yds=False,Pass Yds=False,Rush Yds=False,TO=False,Right_RunTot_TO=False,Delta.Rec.CB=True,Delta.Rec.Safety=True,Delta.Rec.LB=True,Delta.RB.LB=True,Delta.RB.DLine=True,Delta.QB.LB=True,Delta.QB.DLine=False,Delta.Off.Def=True,TO.per.1st=True,Delta.Rec.LB.squ=False,Delta.Rec.Safety.squ=False,Delta.RB.DLine.squ=False,Delta.RB.LB.squ=False,Delta.QB.DLine.squ=True,Delta.QB.LB.squ=False,Delta.Rec.CB.squ=False,Delta.Off.Def.squ=False,TO.per.1st.squ=False,Pass.Yds.per.Total=False,Rush.Yds.per.Total=False</Value>
+          <Value name="poisson">True</Value>
+          <Value name="quasipoisson">False</Value>
+          <Value name="negative.binomial">False</Value>
+          <Value name="theta">auto</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec">RunTot_Team Passing Score</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Count_Regression.yxmc" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="450" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_8932_4a2ef51cf534431081ba25acd991d530_\Engine_4008_9e6ebcbc53b74895aec0621627ae8ba9_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="Score">
+        <Position x="546" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">David_Prediction</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_8932_4a2ef51cf534431081ba25acd991d530_\Engine_4008_e787dcfdf011429186d26fe0ef3cf012_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\david\Documents\UCI\SPRING 2020\Predictive Modeling\SuperBowl\Player Matchup Model\David_Model_Input.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>David_Model_Input.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" size="6" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Team" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Week" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="Game Date" source="DateTime: To MM/dd/yy" type="Date" />
+            <Field name="Team Points" source="Formula: [_CurrentField_]" type="Int64" />
+            <Field name="Opponent" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="RunTot_Team Passing Score" source="Formula: [RunTot_Team Passing Score]-[T..." type="Double" />
+            <Field name="RunTot_Team Rec Score" source="Formula: [RunTot_Team Rec Score]-[Team ..." type="Double" />
+            <Field name="RunTot_Team Rushing Score" source="Formula: [RunTot_Team Rushing Score]-[T..." type="Double" />
+            <Field name="Team Passing Score" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Double" />
+            <Field name="Team Rec Score" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Double" />
+            <Field name="Team Rushing Score" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Double" />
+            <Field name="RunTot_Opp Safety Score" source="Formula: [RunTot_Team Safety Score]-[Te..." type="Double" />
+            <Field name="RunTot_Opp D Line Score" source="Formula: [RunTot_Team D Line Score]-[Te..." type="Double" />
+            <Field name="RunTot_Opp LB Score" source="Formula: [RunTot_Team Linebacker Score]..." type="Double" />
+            <Field name="RunTot_Opp CB Score" source="Formula: [RunTot_Team Cornerback Score]..." type="Double" />
+            <Field name="Opp Safety Score" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Double" />
+            <Field name="Opp D Line Score" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Double" />
+            <Field name="Opp Linebacker Score" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Double" />
+            <Field name="Opp Cornerback Score" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Double" />
+            <Field name="RunTot_1st Downs" source="Formula: [RunTot_1st Downs]-[1st Downs]" type="Int64" />
+            <Field name="RunTot_Total Yds" source="Formula: [RunTot_Total Yds]-[Total Yds]" type="Int64" />
+            <Field name="RunTot_Pass Yds" source="Formula: [RunTot_Pass Yds]-[Pass Yds]" type="Int64" />
+            <Field name="RunTot_Rush Yds" source="Formula: [RunTot_Rush Yds]-[Rush Yds]" type="Int64" />
+            <Field name="RunTot_TO" source="Formula: [RunTot_TO]-[TO]" type="Int64" />
+            <Field name="1st Downs" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Int64" />
+            <Field name="Total Yds" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Int64" />
+            <Field name="Pass Yds" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Int64" />
+            <Field name="Rush Yds" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Int64" />
+            <Field name="TO" source="Formula: IF [_CurrentFieldName_] IN(&quot;TO..." type="Int64" />
+            <Field name="Right_RunTot_TO" source="Formula: [RunTot_TO]-[TO]" type="Int64" />
+            <Field name="Delta.Rec.CB" source="Formula: [RunTot_Team Rec Score]-[RunTo..." type="Double" />
+            <Field name="Delta.Rec.Safety" source="Formula: [RunTot_Team Rec Score]-[RunTo..." type="Double" />
+            <Field name="Delta.Rec.LB" source="Formula: [RunTot_Team Rec Score]-[RunTo..." type="Double" />
+            <Field name="Delta.RB.LB" source="Formula: [RunTot_Team Rushing Score]-[R..." type="Double" />
+            <Field name="Delta.RB.DLine" source="Formula: [RunTot_Team Rushing Score]-[R..." type="Double" />
+            <Field name="Delta.QB.LB" source="Formula: [RunTot_Team Passing Score]-[R..." type="Double" />
+            <Field name="Delta.QB.DLine" source="Formula: [RunTot_Team Passing Score]-[R..." type="Double" />
+            <Field name="Delta.Off.Def" source="Formula: ([RunTot_Team Passing Score]+[..." type="Double" />
+            <Field name="TO.per.1st" source="Formula: ([RunTot_TO]/[RunTot_1st Downs..." type="Double" />
+            <Field name="Delta.Rec.LB.squ" source="Formula: [Delta.Rec.LB]*[Delta.Rec.LB]" type="Double" />
+            <Field name="Delta.Rec.Safety.squ" source="Formula: [Delta.Rec.Safety]*[Delta.Rec...." type="Double" />
+            <Field name="Delta.RB.DLine.squ" source="Formula: [Delta.RB.DLine]*[Delta.RB.DLi..." type="Double" />
+            <Field name="Delta.RB.LB.squ" source="Formula: [Delta.RB.LB]*[Delta.RB.LB]" type="Double" />
+            <Field name="Delta.QB.DLine.squ" source="Formula: [Delta.QB.DLine]*[Delta.QB.DLi..." type="Double" />
+            <Field name="Delta.QB.LB.squ" source="Formula: [Delta.QB.LB]*[Delta.QB.LB]" type="Double" />
+            <Field name="Delta.Rec.CB.squ" source="Formula: [Delta.Rec.CB]*[Delta.Rec.CB]" type="Double" />
+            <Field name="Delta.Off.Def.squ" source="Formula: [Delta.Off.Def]*[Delta.Off.Def..." type="Double" />
+            <Field name="TO.per.1st.squ" source="Formula: ([RunTot_TO]/[RunTot_1st Downs..." type="Double" />
+            <Field name="Pass.Yds.per.Total" source="Formula: [RunTot_Pass Yds]/[RunTot_Tota..." type="Double" />
+            <Field name="Rush.Yds.per.Total" source="Formula: [RunTot_Rush Yds]/[RunTot_Tota..." type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="354" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Week]="Conf. Champ." OR [Week]="Division" OR [Week]="Wild card" OR [Week]="Superbowl"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Week]="Conf. Champ." OR [Week]="Division" OR [Week]="Wild card" OR [Week]="Supe...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Year" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="666" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="666" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team" selected="True" rename="Opponent" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="762" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Opponent" />
+            <Field field="Game.Date" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Opponent" />
+            <Field field="Game.Date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RunTot_Team.Passing.Score" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_Team.Rec.Score" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_Team.Rushing.Score" selected="False" input="Left_" />
+                <SelectField field="Left_Team.Passing.Score" selected="False" input="Left_" />
+                <SelectField field="Left_Team.Rec.Score" selected="False" input="Left_" />
+                <SelectField field="Left_Team.Rushing.Score" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_Opp.Safety.Score" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_Opp.D.Line.Score" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_Opp.LB.Score" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_Opp.CB.Score" selected="False" input="Left_" />
+                <SelectField field="Left_Opp.Safety.Score" selected="False" input="Left_" />
+                <SelectField field="Left_Opp.D.Line.Score" selected="False" input="Left_" />
+                <SelectField field="Left_Opp.Linebacker.Score" selected="False" input="Left_" />
+                <SelectField field="Left_Opp.Cornerback.Score" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_1st.Downs" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_Total.Yds" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_Pass.Yds" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_Rush.Yds" selected="False" input="Left_" />
+                <SelectField field="Left_RunTot_TO" selected="False" input="Left_" />
+                <SelectField field="Left_X1st.Downs" selected="False" input="Left_" />
+                <SelectField field="Left_Total.Yds" selected="False" input="Left_" />
+                <SelectField field="Left_Pass.Yds" selected="False" input="Left_" />
+                <SelectField field="Left_Rush.Yds" selected="False" input="Left_" />
+                <SelectField field="Left_TO" selected="False" input="Left_" />
+                <SelectField field="Left_Right_RunTot_TO" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.Rec.CB" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.Rec.Safety" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.Rec.LB" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.RB.LB" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.RB.DLine" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.QB.LB" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.QB.DLine" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.Off.Def" selected="False" input="Left_" />
+                <SelectField field="Left_TO.per.1st" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.Rec.LB.squ" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.Rec.Safety.squ" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.RB.DLine.squ" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.RB.LB.squ" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.QB.DLine.squ" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.QB.LB.squ" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.Rec.CB.squ" selected="False" input="Left_" />
+                <SelectField field="Left_Delta.Off.Def.squ" selected="False" input="Left_" />
+                <SelectField field="Left_TO.per.1st.squ" selected="False" input="Left_" />
+                <SelectField field="Left_Pass.Yds.per.Total" selected="False" input="Left_" />
+                <SelectField field="Left_Rush.Yds.per.Total" selected="False" input="Left_" />
+                <SelectField field="Right_Year" selected="False" rename="Right_Year" input="Right_" />
+                <SelectField field="Right_Opponent" selected="False" rename="Right_Opponent" input="Right_" />
+                <SelectField field="Right_Week" selected="False" rename="Right_Week" input="Right_" />
+                <SelectField field="Right_Game.Date" selected="False" rename="Right_Game.Date" input="Right_" />
+                <SelectField field="Right_Team.Points" selected="True" rename="Right_Team.Points" input="Right_" />
+                <SelectField field="Right_RunTot_Team.Passing.Score" selected="False" rename="Right_RunTot_Team.Passing.Score" input="Right_" />
+                <SelectField field="Right_RunTot_Team.Rec.Score" selected="False" rename="Right_RunTot_Team.Rec.Score" input="Right_" />
+                <SelectField field="Right_RunTot_Team.Rushing.Score" selected="False" rename="Right_RunTot_Team.Rushing.Score" input="Right_" />
+                <SelectField field="Right_Team.Passing.Score" selected="False" rename="Right_Team.Passing.Score" input="Right_" />
+                <SelectField field="Right_Team.Rec.Score" selected="False" rename="Right_Team.Rec.Score" input="Right_" />
+                <SelectField field="Right_Team.Rushing.Score" selected="False" rename="Right_Team.Rushing.Score" input="Right_" />
+                <SelectField field="Right_RunTot_Opp.Safety.Score" selected="False" rename="Right_RunTot_Opp.Safety.Score" input="Right_" />
+                <SelectField field="Right_RunTot_Opp.D.Line.Score" selected="False" rename="Right_RunTot_Opp.D.Line.Score" input="Right_" />
+                <SelectField field="Right_RunTot_Opp.LB.Score" selected="False" rename="Right_RunTot_Opp.LB.Score" input="Right_" />
+                <SelectField field="Right_RunTot_Opp.CB.Score" selected="False" rename="Right_RunTot_Opp.CB.Score" input="Right_" />
+                <SelectField field="Right_Opp.Safety.Score" selected="False" rename="Right_Opp.Safety.Score" input="Right_" />
+                <SelectField field="Right_Opp.D.Line.Score" selected="False" rename="Right_Opp.D.Line.Score" input="Right_" />
+                <SelectField field="Right_Opp.Linebacker.Score" selected="False" rename="Right_Opp.Linebacker.Score" input="Right_" />
+                <SelectField field="Right_Opp.Cornerback.Score" selected="False" rename="Right_Opp.Cornerback.Score" input="Right_" />
+                <SelectField field="Right_RunTot_1st.Downs" selected="False" rename="Right_RunTot_1st.Downs" input="Right_" />
+                <SelectField field="Right_RunTot_Total.Yds" selected="False" rename="Right_RunTot_Total.Yds" input="Right_" />
+                <SelectField field="Right_RunTot_Pass.Yds" selected="False" rename="Right_RunTot_Pass.Yds" input="Right_" />
+                <SelectField field="Right_RunTot_Rush.Yds" selected="False" rename="Right_RunTot_Rush.Yds" input="Right_" />
+                <SelectField field="Right_RunTot_TO" selected="False" rename="Right_RunTot_TO" input="Right_" />
+                <SelectField field="Right_X1st.Downs" selected="False" rename="Right_X1st.Downs" input="Right_" />
+                <SelectField field="Right_Total.Yds" selected="False" rename="Right_Total.Yds" input="Right_" />
+                <SelectField field="Right_Pass.Yds" selected="False" rename="Right_Pass.Yds" input="Right_" />
+                <SelectField field="Right_Rush.Yds" selected="False" rename="Right_Rush.Yds" input="Right_" />
+                <SelectField field="Right_TO" selected="False" rename="Right_TO" input="Right_" />
+                <SelectField field="Right_Right_RunTot_TO" selected="False" rename="Right_Right_RunTot_TO" input="Right_" />
+                <SelectField field="Right_Delta.Rec.CB" selected="False" rename="Right_Delta.Rec.CB" input="Right_" />
+                <SelectField field="Right_Delta.Rec.Safety" selected="False" rename="Right_Delta.Rec.Safety" input="Right_" />
+                <SelectField field="Right_Delta.Rec.LB" selected="False" rename="Right_Delta.Rec.LB" input="Right_" />
+                <SelectField field="Right_Delta.RB.LB" selected="False" rename="Right_Delta.RB.LB" input="Right_" />
+                <SelectField field="Right_Delta.RB.DLine" selected="False" rename="Right_Delta.RB.DLine" input="Right_" />
+                <SelectField field="Right_Delta.QB.LB" selected="False" rename="Right_Delta.QB.LB" input="Right_" />
+                <SelectField field="Right_Delta.QB.DLine" selected="False" rename="Right_Delta.QB.DLine" input="Right_" />
+                <SelectField field="Right_Delta.Off.Def" selected="False" rename="Right_Delta.Off.Def" input="Right_" />
+                <SelectField field="Right_TO.per.1st" selected="False" rename="Right_TO.per.1st" input="Right_" />
+                <SelectField field="Right_Delta.Rec.LB.squ" selected="False" rename="Right_Delta.Rec.LB.squ" input="Right_" />
+                <SelectField field="Right_Delta.Rec.Safety.squ" selected="False" rename="Right_Delta.Rec.Safety.squ" input="Right_" />
+                <SelectField field="Right_Delta.RB.DLine.squ" selected="False" rename="Right_Delta.RB.DLine.squ" input="Right_" />
+                <SelectField field="Right_Delta.RB.LB.squ" selected="False" rename="Right_Delta.RB.LB.squ" input="Right_" />
+                <SelectField field="Right_Delta.QB.DLine.squ" selected="False" rename="Right_Delta.QB.DLine.squ" input="Right_" />
+                <SelectField field="Right_Delta.QB.LB.squ" selected="False" rename="Right_Delta.QB.LB.squ" input="Right_" />
+                <SelectField field="Right_Delta.Rec.CB.squ" selected="False" rename="Right_Delta.Rec.CB.squ" input="Right_" />
+                <SelectField field="Right_Delta.Off.Def.squ" selected="False" rename="Right_Delta.Off.Def.squ" input="Right_" />
+                <SelectField field="Right_TO.per.1st.squ" selected="False" rename="Right_TO.per.1st.squ" input="Right_" />
+                <SelectField field="Right_Pass.Yds.per.Total" selected="False" rename="Right_Pass.Yds.per.Total" input="Right_" />
+                <SelectField field="Right_Rush.Yds.per.Total" selected="False" rename="Right_Rush.Yds.per.Total" input="Right_" />
+                <SelectField field="Right_David_Prediction" selected="True" rename="Right_David_Prediction" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Year" selected="True" />
+            <SelectField field="Week" selected="True" />
+            <SelectField field="Game.Date" selected="True" />
+            <SelectField field="Team" selected="True" />
+            <SelectField field="Team.Points" selected="True" rename="Actual_Team_Points" />
+            <SelectField field="David_Prediction" selected="True" rename="Predicted_Team_Points" />
+            <SelectField field="Opponent" selected="True" />
+            <SelectField field="Right_Team.Points" selected="True" rename="Actual_Opponent_Points" />
+            <SelectField field="Opponent2" selected="False" />
+            <SelectField field="Right_David_Prediction" selected="True" rename="Predicted_Opponent_Points" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1014" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Game.Date" />
+            <Field field="Predicted_Total_Points" />
+            <Field field="Actual_Total_Points" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="930" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Predicted_Team_Points]+[Predicted_Opponent_Points]" field="Predicted_Total_Points" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Actual_Team_Points]+[Actual_Opponent_Points]" field="Actual_Total_Points" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Predicted_Total_Points = [Predicted_Team_Points]+[Predicted_Opponent_Points]
+Act...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1026" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="32" />
+          <Fields>
+            <Field name="Old_Team" />
+            <Field name="New_Team" />
+          </Fields>
+          <Data>
+            <r>
+              <c>ATL</c>
+              <c>Atlanta Falcons</c>
+            </r>
+            <r>
+              <c>BUF</c>
+              <c>Buffalo Bills</c>
+            </r>
+            <r>
+              <c>CAR</c>
+              <c>Carolina Panthers</c>
+            </r>
+            <r>
+              <c>CHI</c>
+              <c>Chicago Bears</c>
+            </r>
+            <r>
+              <c>CIN</c>
+              <c>Cincinnati Bengals</c>
+            </r>
+            <r>
+              <c>CLE</c>
+              <c>Cleveland Browns</c>
+            </r>
+            <r>
+              <c>CLT</c>
+              <c>Indianapolis Colts</c>
+            </r>
+            <r>
+              <c>CRD</c>
+              <c>Arizona Cardinals</c>
+            </r>
+            <r>
+              <c>DAL</c>
+              <c>Dallas Cowboys</c>
+            </r>
+            <r>
+              <c>DEN</c>
+              <c>Denver Broncos</c>
+            </r>
+            <r>
+              <c>DET</c>
+              <c>Detroit Lions</c>
+            </r>
+            <r>
+              <c>GNB</c>
+              <c>Green Bay Packers</c>
+            </r>
+            <r>
+              <c>HTX</c>
+              <c>Houston Texans</c>
+            </r>
+            <r>
+              <c>JAX</c>
+              <c>Jacksonville Jaguar</c>
+            </r>
+            <r>
+              <c>KAN</c>
+              <c>Kansas City Chiefs</c>
+            </r>
+            <r>
+              <c>MIA</c>
+              <c>Miami Dolphins</c>
+            </r>
+            <r>
+              <c>MIN</c>
+              <c>Minnesota Vikings</c>
+            </r>
+            <r>
+              <c>NOR</c>
+              <c>New Orleans Saints</c>
+            </r>
+            <r>
+              <c>NWE</c>
+              <c>New England Patriot</c>
+            </r>
+            <r>
+              <c>NYG</c>
+              <c>New York Giants</c>
+            </r>
+            <r>
+              <c>NYJ</c>
+              <c>New York Jets</c>
+            </r>
+            <r>
+              <c>OTI</c>
+              <c>Tennessee Titans</c>
+            </r>
+            <r>
+              <c>PHI</c>
+              <c>Philadelphia Eagles</c>
+            </r>
+            <r>
+              <c>PIT</c>
+              <c>Pittsburgh Steelers</c>
+            </r>
+            <r>
+              <c>RAI</c>
+              <c>Oakland Raiders</c>
+            </r>
+            <r>
+              <c>RAM</c>
+              <c>Rams</c>
+            </r>
+            <r>
+              <c>RAV</c>
+              <c>Baltimore Ravens</c>
+            </r>
+            <r>
+              <c>SDG</c>
+              <c>Chargers</c>
+            </r>
+            <r>
+              <c>SEA</c>
+              <c>Seattle Seahawks</c>
+            </r>
+            <r>
+              <c>SFO</c>
+              <c>San Francisco 49ers</c>
+            </r>
+            <r>
+              <c>TAM</c>
+              <c>Tampa Bay Buccaneer</c>
+            </r>
+            <r>
+              <c>WAS</c>
+              <c>Washington Redskins</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="1134" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Team</FieldFind>
+          <FieldSearch>Old_Team</FieldSearch>
+          <ReplaceFoundField>New_Team</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1194" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="32" />
+          <Fields>
+            <Field name="Old_Team" />
+            <Field name="New_Team" />
+          </Fields>
+          <Data>
+            <r>
+              <c>ATL</c>
+              <c>Atlanta Falcons</c>
+            </r>
+            <r>
+              <c>BUF</c>
+              <c>Buffalo Bills</c>
+            </r>
+            <r>
+              <c>CAR</c>
+              <c>Carolina Panthers</c>
+            </r>
+            <r>
+              <c>CHI</c>
+              <c>Chicago Bears</c>
+            </r>
+            <r>
+              <c>CIN</c>
+              <c>Cincinnati Bengals</c>
+            </r>
+            <r>
+              <c>CLE</c>
+              <c>Cleveland Browns</c>
+            </r>
+            <r>
+              <c>CLT</c>
+              <c>Indianapolis Colts</c>
+            </r>
+            <r>
+              <c>CRD</c>
+              <c>Arizona Cardinals</c>
+            </r>
+            <r>
+              <c>DAL</c>
+              <c>Dallas Cowboys</c>
+            </r>
+            <r>
+              <c>DEN</c>
+              <c>Denver Broncos</c>
+            </r>
+            <r>
+              <c>DET</c>
+              <c>Detroit Lions</c>
+            </r>
+            <r>
+              <c>GNB</c>
+              <c>Green Bay Packers</c>
+            </r>
+            <r>
+              <c>HTX</c>
+              <c>Houston Texans</c>
+            </r>
+            <r>
+              <c>JAX</c>
+              <c>Jacksonville Jaguar</c>
+            </r>
+            <r>
+              <c>KAN</c>
+              <c>Kansas City Chiefs</c>
+            </r>
+            <r>
+              <c>MIA</c>
+              <c>Miami Dolphins</c>
+            </r>
+            <r>
+              <c>MIN</c>
+              <c>Minnesota Vikings</c>
+            </r>
+            <r>
+              <c>NOR</c>
+              <c>New Orleans Saints</c>
+            </r>
+            <r>
+              <c>NWE</c>
+              <c>New England Patriot</c>
+            </r>
+            <r>
+              <c>NYG</c>
+              <c>New York Giants</c>
+            </r>
+            <r>
+              <c>NYJ</c>
+              <c>New York Jets</c>
+            </r>
+            <r>
+              <c>OTI</c>
+              <c>Tennessee Titans</c>
+            </r>
+            <r>
+              <c>PHI</c>
+              <c>Philadelphia Eagles</c>
+            </r>
+            <r>
+              <c>PIT</c>
+              <c>Pittsburgh Steelers</c>
+            </r>
+            <r>
+              <c>RAI</c>
+              <c>Oakland Raiders</c>
+            </r>
+            <r>
+              <c>RAM</c>
+              <c>Rams</c>
+            </r>
+            <r>
+              <c>RAV</c>
+              <c>Baltimore Ravens</c>
+            </r>
+            <r>
+              <c>SDG</c>
+              <c>Chargers</c>
+            </r>
+            <r>
+              <c>SEA</c>
+              <c>Seattle Seahawks</c>
+            </r>
+            <r>
+              <c>SFO</c>
+              <c>San Francisco 49ers</c>
+            </r>
+            <r>
+              <c>TAM</c>
+              <c>Tampa Bay Buccaneer</c>
+            </r>
+            <r>
+              <c>WAS</c>
+              <c>Washington Redskins</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="1302" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Opponent</FieldFind>
+          <FieldSearch>Old_Team</FieldSearch>
+          <ReplaceFoundField>New_Team</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1446" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">\Over_Under_David_Data.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Over_Under_David_Data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Reports" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="3" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="False" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Unique" />
+      <Destination ToolID="15" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Over_Under_David</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

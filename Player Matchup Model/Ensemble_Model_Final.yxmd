@@ -1,0 +1,1855 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings>
+        <Position x="342" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">Poisson</Value>
+          <Value name="Y Var">Team Points</Value>
+          <Value name="X Vars">Year=False,Team=False,Week=False,Team Points=False,Opponent=False,RunTot_Team Passing Score=False,RunTot_Team Rec Score=False,RunTot_Team Rushing Score=False,Team Passing Score=False,Team Rec Score=False,Team Rushing Score=False,RunTot_Opp Safety Score=False,RunTot_Opp D Line Score=False,RunTot_Opp LB Score=False,RunTot_Opp CB Score=False,Opp Safety Score=False,Opp D Line Score=False,Opp Linebacker Score=False,Opp Cornerback Score=False,RunTot_1st Downs=False,RunTot_Total Yds=False,RunTot_Pass Yds=False,RunTot_Rush Yds=False,RunTot_TO=False,1st Downs=False,Total Yds=False,Pass Yds=False,Rush Yds=False,TO=False,Right_RunTot_TO=False,Delta.Rec.CB=True,Delta.Rec.Safety=True,Delta.Rec.LB=True,Delta.RB.LB=True,Delta.RB.DLine=True,Delta.QB.LB=True,Delta.QB.DLine=False,Delta.Off.Def=True,TO.per.1st=True,Delta.Rec.LB.squ=False,Delta.Rec.Safety.squ=False,Delta.RB.DLine.squ=False,Delta.RB.LB.squ=False,Delta.QB.DLine.squ=True,Delta.QB.LB.squ=False,Delta.Rec.CB.squ=False,Delta.Off.Def.squ=False,TO.per.1st.squ=False,Pass.Yds.per.Total=False,Rush.Yds.per.Total=False</Value>
+          <Value name="poisson">True</Value>
+          <Value name="quasipoisson">False</Value>
+          <Value name="negative.binomial">False</Value>
+          <Value name="theta">auto</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec">RunTot_Team Passing Score</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Count_Regression.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_7280_2944d988791347c68a0b1a0ba7f232fc_\Engine_2108_e5e4df7ca433446e85e5402de5e4d166_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="Score">
+        <Position x="438" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">David_Prediction</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="438" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_7280_2944d988791347c68a0b1a0ba7f232fc_\Engine_2108_c38a787560264ef48e8a73641975c491_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">.\David_Model_Input.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>David_Model_Input.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>([Week]="Conf. Champ." OR [Week]="Division" OR [Week]="Wild card" OR [Week]="Superbowl") AND [Year]&gt;=2015</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>([Week]="Conf. Champ." OR [Week]="Division" OR [Week]="Wild card" OR [Week]="Sup...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings>
+        <Position x="342" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name" />
+          <Value name="Y Var">Actual_Points</Value>
+          <Value name="X Vars">Field_1=False,Team=False,Year=False,Wins=True,Losses=True,Offense_punting_FC=True,Offense_offensive_line_rush_left_Pwr=True,Defense_touchdowns_Def_Blk_Pnt%=False,Defense_touchdowns_Total=False,Defense_tackles_Comb=True,Offense_punt_returns_Yds_Avg=False,Offense_passing_Yds/G=True,Offense_game_stats_4th_Pct=True,Offense_punt_returns_20+=False,Offense_punt_returns_40+=False,Offense_rushing_1st%=True,Defense_passing_Avg=False,Offense_passing_Avg=True,Defense_passing_Sck=True,Offense_offensive_line_rush_center_Pwr=True,Defense_rushing_Yds/G=True,Offense_offensive_line_rush_right_+10Y=True,Offense_field_goals_Pct_30-39=True,Game_ID=False,Actual_Points=False,Playoff_Game=False,Percent_Chance_diff=True</Value>
+          <Value name="poisson">True</Value>
+          <Value name="quasipoisson">False</Value>
+          <Value name="negative.binomial">False</Value>
+          <Value name="theta">auto</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec">Year</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Count_Regression.yxmc" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_7280_2944d988791347c68a0b1a0ba7f232fc_\Engine_2108_ef83ee876c374c6cb18898f55714282a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="Score">
+        <Position x="438" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">Matt_Prediction</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="438" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_7280_2944d988791347c68a0b1a0ba7f232fc_\Engine_2108_40faabb4552b41159f58d9225adf02ac_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;=</Operator>
+            <Field>Year</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-01-29 16:34:52</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2015</Operand>
+              <StartDate>2020-01-29 16:34:52</StartDate>
+              <EndDate>2020-01-29 16:34:52</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Year] &gt;= 2015</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="Year" />
+            <Field name="Team" />
+            <Field name="Week" />
+            <Field name="Game Date" />
+            <Field name="Team Points" />
+            <Field name="Opponent" />
+            <Field name="RunTot_Team Passing Score" />
+            <Field name="RunTot_Team Rec Score" />
+            <Field name="RunTot_Team Rushing Score" />
+            <Field name="Team Passing Score" />
+            <Field name="Team Rec Score" />
+            <Field name="Team Rushing Score" />
+            <Field name="RunTot_Opp Safety Score" />
+            <Field name="RunTot_Opp D Line Score" />
+            <Field name="RunTot_Opp LB Score" />
+            <Field name="RunTot_Opp CB Score" />
+            <Field name="Opp Safety Score" />
+            <Field name="Opp D Line Score" />
+            <Field name="Opp Linebacker Score" />
+            <Field name="Opp Cornerback Score" />
+            <Field name="Delta Rec CB" />
+            <Field name="Delta Rec Safety" />
+            <Field name="Delta Rec LB" />
+            <Field name="Delta RB LB" />
+            <Field name="Delta RB DLine" />
+            <Field name="Delta QB LB" />
+            <Field name="Delta QB DLine" />
+            <Field name="RunTot_1st Downs" />
+            <Field name="RunTot_Total Yds" />
+            <Field name="RunTot_Pass Yds" />
+            <Field name="RunTot_Rush Yds" />
+            <Field name="RunTot_TO" />
+          </Fields>
+          <Data>
+            <r>
+              <c>2019</c>
+              <c>San Francisco 49ers</c>
+              <c>SuperBowl</c>
+              <c>2/2/2020</c>
+              <c />
+              <c>KAN</c>
+              <c>9.168267797</c>
+              <c>17.73531262</c>
+              <c>30.04253584</c>
+              <c />
+              <c />
+              <c />
+              <c>4.788726018</c>
+              <c>12.82018888</c>
+              <c>3.512686761</c>
+              <c>4.669201633</c>
+              <c />
+              <c />
+              <c />
+              <c />
+              <c>13.06611099</c>
+              <c>12.9465866</c>
+              <c>14.22262586</c>
+              <c>26.52984908</c>
+              <c>17.22234696</c>
+              <c>5.655581036</c>
+              <c>-3.651921081</c>
+              <c>378</c>
+              <c>6763</c>
+              <c>4210</c>
+              <c>2553</c>
+              <c>28</c>
+            </r>
+            <r>
+              <c>2019</c>
+              <c>Kansas City Chiefs</c>
+              <c>SuperBowl</c>
+              <c>2/2/2020</c>
+              <c />
+              <c>SFO</c>
+              <c>11.34311458</c>
+              <c>19.39134889</c>
+              <c>27.01087755</c>
+              <c />
+              <c />
+              <c />
+              <c>1.86193586</c>
+              <c>13.89686978</c>
+              <c>4.349325918</c>
+              <c>10.15102678</c>
+              <c />
+              <c />
+              <c />
+              <c />
+              <c>9.240322105</c>
+              <c>17.52941303</c>
+              <c>15.04202297</c>
+              <c>22.66155163</c>
+              <c>13.11400777</c>
+              <c>6.993788663</c>
+              <c>-2.553755204</c>
+              <c>399</c>
+              <c>6796</c>
+              <c>5024</c>
+              <c>1772</c>
+              <c>16</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Week" selected="True" rename="Playoff_Game" />
+            <SelectField field="Game Date" selected="True" rename="Game.Date" />
+            <SelectField field="Team Points" selected="True" rename="Team.Points" />
+            <SelectField field="Team Passing Score" selected="False" />
+            <SelectField field="Team Rec Score" selected="False" />
+            <SelectField field="Team Rushing Score" selected="False" />
+            <SelectField field="Opp Safety Score" selected="False" />
+            <SelectField field="Opp D Line Score" selected="False" />
+            <SelectField field="Opp Linebacker Score" selected="False" />
+            <SelectField field="Opp Cornerback Score" selected="False" />
+            <SelectField field="Delta Rec CB" selected="True" rename="Delta.Rec.CB" />
+            <SelectField field="Delta Rec Safety" selected="True" rename="Delta.Rec.Safety" />
+            <SelectField field="Delta Rec LB" selected="True" rename="Delta.Rec.LB" />
+            <SelectField field="Delta RB LB" selected="True" rename="Delta.RB.LB" />
+            <SelectField field="Delta RB DLine" selected="True" rename="Delta.RB.DLine" />
+            <SelectField field="Delta QB LB" selected="True" rename="Delta.QB.LB" />
+            <SelectField field="Delta QB DLine" selected="True" rename="Delta.QB.DLine" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="330" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RunTot_1st Downs" selected="True" rename="Right_RunTot_1st.Downs" type="Int64" size="8" />
+            <SelectField field="RunTot_Total Yds" selected="True" rename="Right_RunTot_Total.Yds" type="Int64" size="8" />
+            <SelectField field="RunTot_Pass Yds" selected="True" rename="Right_RunTot_Pass.Yds" type="Int64" size="8" />
+            <SelectField field="RunTot_Rush Yds" selected="True" rename="Right_RunTot_Rush.Yds" type="Int64" size="8" />
+            <SelectField field="RunTot_TO" selected="True" rename="Right_RunTot_TO" type="Int64" size="8" />
+            <SelectField field="Delta.Rec.LB.squ" selected="True" type="Double" size="8" />
+            <SelectField field="Delta.Rec.Safety.squ" selected="True" type="Double" size="8" />
+            <SelectField field="Delta.RB.DLine.squ" selected="True" type="Double" size="8" />
+            <SelectField field="Delta.RB.LB.squ" selected="True" type="Double" size="8" />
+            <SelectField field="Delta.QB.DLine.squ" selected="True" type="Double" size="8" />
+            <SelectField field="Delta.QB.LB.squ" selected="True" type="Double" size="8" />
+            <SelectField field="Delta.Rec.CB.squ" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="234" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Delta.Rec.LB]*[Delta.Rec.LB]" field="Delta.Rec.LB.squ" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Delta.Rec.Safety]*[Delta.Rec.Safety]" field="Delta.Rec.Safety.squ" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Delta.RB.DLine]*[Delta.RB.DLine]" field="Delta.RB.DLine.squ" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Delta.RB.LB]*[Delta.RB.LB]" field="Delta.RB.LB.squ" size="1073741823" type="V_WString" />
+            <FormulaField expression="([RunTot_TO]/[RunTot_1st Downs])*100" field="TO.per.1st" size="8" type="Double" />
+            <FormulaField expression="[RunTot_Pass Yds]/[RunTot_Total Yds]" field="Pass.Yds.per.Total" size="8" type="Double" />
+            <FormulaField expression="[RunTot_Rush Yds]/[RunTot_Total Yds]" field="Rush.Yds.per.Total" size="8" type="Double" />
+            <FormulaField expression="[Delta.QB.DLine]*[Delta.QB.DLine]" field="Delta.QB.DLine.squ" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Delta.QB.LB]*[Delta.QB.LB]" field="Delta.QB.LB.squ" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Delta.Rec.CB]*[Delta.Rec.CB]" field="Delta.Rec.CB.squ" size="1073741823" type="V_WString" />
+            <FormulaField expression="([RunTot_Team Passing Score]+[RunTot_Team Rec Score]+[RunTot_Team Rushing Score])-([RunTot_Opp Safety Score]+[RunTot_Opp D Line Score]+[RunTot_Opp LB Score]+[RunTot_Opp CB Score])" field="Delta.Off.Def" size="8" type="Double" />
+            <FormulaField expression="[Delta.Off.Def]*[Delta.Off.Def]" field="Delta.Off.Def.squ" size="8" type="Double" />
+            <FormulaField expression="([RunTot_TO]/[RunTot_1st Downs])*([RunTot_TO]/[RunTot_1st Downs])*10000" field="TO.per.1st.squ" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Delta.Rec.LB.squ = [Delta.Rec.LB]*[Delta.Rec.LB]
+Delta.Rec.Safety.squ = [Delta.R...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="Score">
+        <Position x="438" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">David_Prediction</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Year" selected="True" type="V_WString" size="11" />
+            <SelectField field="Game.Date" selected="False" />
+            <SelectField field="Team.Points" selected="False" />
+            <SelectField field="Opponent" selected="False" />
+            <SelectField field="RunTot_Team.Passing.Score" selected="False" />
+            <SelectField field="RunTot_Team.Rec.Score" selected="False" />
+            <SelectField field="RunTot_Team.Rushing.Score" selected="False" />
+            <SelectField field="RunTot_Opp.Safety.Score" selected="False" />
+            <SelectField field="RunTot_Opp.D.Line.Score" selected="False" />
+            <SelectField field="RunTot_Opp.LB.Score" selected="False" />
+            <SelectField field="RunTot_Opp.CB.Score" selected="False" />
+            <SelectField field="Delta.Rec.CB" selected="False" />
+            <SelectField field="Delta.Rec.Safety" selected="False" />
+            <SelectField field="Delta.Rec.LB" selected="False" />
+            <SelectField field="Delta.RB.LB" selected="False" />
+            <SelectField field="Delta.RB.DLine" selected="False" />
+            <SelectField field="Delta.QB.LB" selected="False" />
+            <SelectField field="Delta.QB.DLine" selected="False" />
+            <SelectField field="Right_RunTot_1st.Downs" selected="False" />
+            <SelectField field="Right_RunTot_Total.Yds" selected="False" />
+            <SelectField field="Right_RunTot_Pass.Yds" selected="False" />
+            <SelectField field="Right_RunTot_Rush.Yds" selected="False" />
+            <SelectField field="Right_RunTot_TO" selected="False" />
+            <SelectField field="Delta.Rec.LB.squ" selected="False" />
+            <SelectField field="Delta.Rec.Safety.squ" selected="False" />
+            <SelectField field="Delta.RB.DLine.squ" selected="False" />
+            <SelectField field="Delta.RB.LB.squ" selected="False" />
+            <SelectField field="TO.per.1st" selected="False" />
+            <SelectField field="Pass.Yds.per.Total" selected="False" />
+            <SelectField field="Rush.Yds.per.Total" selected="False" />
+            <SelectField field="Delta.QB.DLine.squ" selected="False" />
+            <SelectField field="Delta.QB.LB.squ" selected="False" />
+            <SelectField field="Delta.Rec.CB.squ" selected="False" />
+            <SelectField field="Delta.Off.Def" selected="False" />
+            <SelectField field="Delta.Off.Def.squ" selected="False" />
+            <SelectField field="TO.per.1st.squ" selected="False" />
+            <SelectField field="PScore" selected="False" rename="Predicted_Superbowl_Score" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="630" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_7280_2944d988791347c68a0b1a0ba7f232fc_\Engine_2108_df84d8e94da74bceba061a9b64da0fdc_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="Score">
+        <Position x="438" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">Matt_Prediction</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Year" selected="True" />
+            <SelectField field="Field_1" selected="False" />
+            <SelectField field="Team" selected="True" />
+            <SelectField field="Wins" selected="False" />
+            <SelectField field="Losses" selected="False" />
+            <SelectField field="Offense_punting_FC" selected="False" />
+            <SelectField field="Offense_offensive_line_rush_left_Pwr" selected="False" />
+            <SelectField field="Defense_touchdowns_Def_Blk_Pnt." selected="False" />
+            <SelectField field="Defense_touchdowns_Total" selected="False" />
+            <SelectField field="Defense_tackles_Comb" selected="False" />
+            <SelectField field="Offense_punt_returns_Yds_Avg" selected="False" />
+            <SelectField field="Offense_passing_Yds.G" selected="False" />
+            <SelectField field="Offense_game_stats_4th_Pct" selected="False" />
+            <SelectField field="Offense_punt_returns_20." selected="False" />
+            <SelectField field="Offense_punt_returns_40." selected="False" />
+            <SelectField field="Offense_rushing_1st." selected="False" />
+            <SelectField field="Defense_passing_Avg" selected="False" />
+            <SelectField field="Offense_passing_Avg" selected="False" />
+            <SelectField field="Defense_passing_Sck" selected="False" />
+            <SelectField field="Offense_offensive_line_rush_center_Pwr" selected="False" />
+            <SelectField field="Defense_rushing_Yds.G" selected="False" />
+            <SelectField field="Offense_offensive_line_rush_right_.10Y" selected="False" />
+            <SelectField field="Offense_field_goals_Pct_30.39" selected="False" />
+            <SelectField field="Game_ID" selected="False" />
+            <SelectField field="Actual_Points" selected="False" />
+            <SelectField field="Playoff_Game" selected="True" />
+            <SelectField field="Percent_Chance_diff" selected="False" />
+            <SelectField field="Matt_Prediction_SB" selected="True" />
+            <SelectField field="Game.Date" selected="False" />
+            <SelectField field="Team.Points" selected="False" />
+            <SelectField field="Opponent" selected="False" />
+            <SelectField field="RunTot_Team.Passing.Score" selected="False" />
+            <SelectField field="RunTot_Team.Rec.Score" selected="False" />
+            <SelectField field="RunTot_Team.Rushing.Score" selected="False" />
+            <SelectField field="RunTot_Opp.Safety.Score" selected="False" />
+            <SelectField field="RunTot_Opp.D.Line.Score" selected="False" />
+            <SelectField field="RunTot_Opp.LB.Score" selected="False" />
+            <SelectField field="RunTot_Opp.CB.Score" selected="False" />
+            <SelectField field="Delta.Rec.CB" selected="False" />
+            <SelectField field="Delta.Rec.Safety" selected="False" />
+            <SelectField field="Delta.Rec.LB" selected="False" />
+            <SelectField field="Delta.RB.LB" selected="False" />
+            <SelectField field="Delta.RB.DLine" selected="False" />
+            <SelectField field="Delta.QB.LB" selected="False" />
+            <SelectField field="Delta.QB.DLine" selected="False" />
+            <SelectField field="Right_RunTot_1st.Downs" selected="False" />
+            <SelectField field="Right_RunTot_Total.Yds" selected="False" />
+            <SelectField field="Right_RunTot_Pass.Yds" selected="False" />
+            <SelectField field="Right_RunTot_Rush.Yds" selected="False" />
+            <SelectField field="Right_RunTot_TO" selected="False" />
+            <SelectField field="Delta.Rec.LB.squ" selected="False" />
+            <SelectField field="Delta.Rec.Safety.squ" selected="False" />
+            <SelectField field="Delta.RB.DLine.squ" selected="False" />
+            <SelectField field="Delta.RB.LB.squ" selected="False" />
+            <SelectField field="TO.per.1st" selected="False" />
+            <SelectField field="Pass.Yds.per.Total" selected="False" />
+            <SelectField field="Rush.Yds.per.Total" selected="False" />
+            <SelectField field="Delta.QB.DLine.squ" selected="False" />
+            <SelectField field="Delta.QB.LB.squ" selected="False" />
+            <SelectField field="Delta.Rec.CB.squ" selected="False" />
+            <SelectField field="Delta.Off.Def" selected="False" />
+            <SelectField field="Delta.Off.Def.squ" selected="False" />
+            <SelectField field="TO.per.1st.squ" selected="False" />
+            <SelectField field="PScore" selected="False" rename="Predicted_Superbowl_Score" />
+            <SelectField field="Matt_Prediction" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="534" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_7280_2944d988791347c68a0b1a0ba7f232fc_\Engine_2108_ebb486b7efd44cf2a3c5b2bee7a5380f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="558" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="32" />
+          <Fields>
+            <Field name="Old_Team" />
+            <Field name="New_Team" />
+          </Fields>
+          <Data>
+            <r>
+              <c>ATL</c>
+              <c>Atlanta Falcons</c>
+            </r>
+            <r>
+              <c>BUF</c>
+              <c>Buffalo Bills</c>
+            </r>
+            <r>
+              <c>CAR</c>
+              <c>Carolina Panthers</c>
+            </r>
+            <r>
+              <c>CHI</c>
+              <c>Chicago Bears</c>
+            </r>
+            <r>
+              <c>CIN</c>
+              <c>Cincinnati Bengals</c>
+            </r>
+            <r>
+              <c>CLE</c>
+              <c>Cleveland Browns</c>
+            </r>
+            <r>
+              <c>CLT</c>
+              <c>Indianapolis Colts</c>
+            </r>
+            <r>
+              <c>CRD</c>
+              <c>Arizona Cardinals</c>
+            </r>
+            <r>
+              <c>DAL</c>
+              <c>Dallas Cowboys</c>
+            </r>
+            <r>
+              <c>DEN</c>
+              <c>Denver Broncos</c>
+            </r>
+            <r>
+              <c>DET</c>
+              <c>Detroit Lions</c>
+            </r>
+            <r>
+              <c>GNB</c>
+              <c>Green Bay Packers</c>
+            </r>
+            <r>
+              <c>HTX</c>
+              <c>Houston Texans</c>
+            </r>
+            <r>
+              <c>JAX</c>
+              <c>Jacksonville Jaguar</c>
+            </r>
+            <r>
+              <c>KAN</c>
+              <c>Kansas City Chiefs</c>
+            </r>
+            <r>
+              <c>MIA</c>
+              <c>Miami Dolphins</c>
+            </r>
+            <r>
+              <c>MIN</c>
+              <c>Minnesota Vikings</c>
+            </r>
+            <r>
+              <c>NOR</c>
+              <c>New Orleans Saints</c>
+            </r>
+            <r>
+              <c>NWE</c>
+              <c>New England Patriot</c>
+            </r>
+            <r>
+              <c>NYG</c>
+              <c>New York Giants</c>
+            </r>
+            <r>
+              <c>NYJ</c>
+              <c>New York Jets</c>
+            </r>
+            <r>
+              <c>OTI</c>
+              <c>Tennessee Titans</c>
+            </r>
+            <r>
+              <c>PHI</c>
+              <c>Philadelphia Eagles</c>
+            </r>
+            <r>
+              <c>PIT</c>
+              <c>Pittsburgh Steelers</c>
+            </r>
+            <r>
+              <c>RAI</c>
+              <c>Oakland Raiders</c>
+            </r>
+            <r>
+              <c>RAM</c>
+              <c>Rams</c>
+            </r>
+            <r>
+              <c>RAV</c>
+              <c>Baltimore Ravens</c>
+            </r>
+            <r>
+              <c>SDG</c>
+              <c>Chargers</c>
+            </r>
+            <r>
+              <c>SEA</c>
+              <c>Seattle Seahawks</c>
+            </r>
+            <r>
+              <c>SFO</c>
+              <c>San Francisco 49ers</c>
+            </r>
+            <r>
+              <c>TAM</c>
+              <c>Tampa Bay Buccaneer</c>
+            </r>
+            <r>
+              <c>WAS</c>
+              <c>Washington Redskins</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="642" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Team</FieldFind>
+          <FieldSearch>Old_Team</FieldSearch>
+          <ReplaceFoundField>New_Team</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Year" selected="True" type="V_WString" size="19" />
+            <SelectField field="Team" selected="True" />
+            <SelectField field="Week" selected="True" rename="Playoff_Game" />
+            <SelectField field="Team.Points" selected="True" rename="Actual_Points" />
+            <SelectField field="Game.Date" selected="False" />
+            <SelectField field="Opponent" selected="False" />
+            <SelectField field="RunTot_Team.Passing.Score" selected="False" />
+            <SelectField field="RunTot_Team.Rec.Score" selected="False" />
+            <SelectField field="RunTot_Team.Rushing.Score" selected="False" />
+            <SelectField field="Team.Passing.Score" selected="False" />
+            <SelectField field="Team.Rec.Score" selected="False" />
+            <SelectField field="Team.Rushing.Score" selected="False" />
+            <SelectField field="RunTot_Opp.Safety.Score" selected="False" />
+            <SelectField field="RunTot_Opp.D.Line.Score" selected="False" />
+            <SelectField field="RunTot_Opp.LB.Score" selected="False" />
+            <SelectField field="RunTot_Opp.CB.Score" selected="False" />
+            <SelectField field="Opp.Safety.Score" selected="False" />
+            <SelectField field="Opp.D.Line.Score" selected="False" />
+            <SelectField field="Opp.Linebacker.Score" selected="False" />
+            <SelectField field="Opp.Cornerback.Score" selected="False" />
+            <SelectField field="RunTot_1st.Downs" selected="False" />
+            <SelectField field="RunTot_Total.Yds" selected="False" />
+            <SelectField field="RunTot_Pass.Yds" selected="False" />
+            <SelectField field="RunTot_Rush.Yds" selected="False" />
+            <SelectField field="RunTot_TO" selected="False" />
+            <SelectField field="X1st.Downs" selected="False" />
+            <SelectField field="Total.Yds" selected="False" />
+            <SelectField field="Pass.Yds" selected="False" />
+            <SelectField field="Rush.Yds" selected="False" />
+            <SelectField field="TO" selected="False" />
+            <SelectField field="Right_RunTot_TO" selected="False" />
+            <SelectField field="Delta.Rec.CB" selected="False" />
+            <SelectField field="Delta.Rec.Safety" selected="False" />
+            <SelectField field="Delta.Rec.LB" selected="False" />
+            <SelectField field="Delta.RB.LB" selected="False" />
+            <SelectField field="Delta.RB.DLine" selected="False" />
+            <SelectField field="Delta.QB.LB" selected="False" />
+            <SelectField field="Delta.QB.DLine" selected="False" />
+            <SelectField field="Delta.Off.Def" selected="False" />
+            <SelectField field="TO.per.1st" selected="False" />
+            <SelectField field="Delta.Rec.LB.squ" selected="False" />
+            <SelectField field="Delta.Rec.Safety.squ" selected="False" />
+            <SelectField field="Delta.RB.DLine.squ" selected="False" />
+            <SelectField field="Delta.RB.LB.squ" selected="False" />
+            <SelectField field="Delta.QB.DLine.squ" selected="False" />
+            <SelectField field="Delta.QB.LB.squ" selected="False" />
+            <SelectField field="Delta.Rec.CB.squ" selected="False" />
+            <SelectField field="Delta.Off.Def.squ" selected="False" />
+            <SelectField field="TO.per.1st.squ" selected="False" />
+            <SelectField field="Pass.Yds.per.Total" selected="False" />
+            <SelectField field="Rush.Yds.per.Total" selected="False" />
+            <SelectField field="David_Prediction" selected="True" />
+            <SelectField field="David_Diff_squ" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">.\Matt_Superbowl_Teams.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Matt_Superbowl_Teams.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">.\Matt_Model_Input.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Matt_Model_Input.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Year" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field_1" selected="False" />
+            <SelectField field="Year" selected="True" type="V_WString" size="19" />
+            <SelectField field="Team" selected="True" />
+            <SelectField field="Playoff_Game" selected="True" />
+            <SelectField field="Actual_Points" selected="True" />
+            <SelectField field="Matt_Prediction" selected="True" />
+            <SelectField field="Wins" selected="False" />
+            <SelectField field="Losses" selected="False" />
+            <SelectField field="Offense_punting_FC" selected="False" />
+            <SelectField field="Offense_offensive_line_rush_left_Pwr" selected="False" />
+            <SelectField field="Defense_touchdowns_Def_Blk_Pnt." selected="False" />
+            <SelectField field="Defense_touchdowns_Total" selected="False" />
+            <SelectField field="Defense_tackles_Comb" selected="False" />
+            <SelectField field="Offense_punt_returns_Yds_Avg" selected="False" />
+            <SelectField field="Offense_passing_Yds.G" selected="False" />
+            <SelectField field="Offense_game_stats_4th_Pct" selected="False" />
+            <SelectField field="Offense_punt_returns_20." selected="False" />
+            <SelectField field="Offense_punt_returns_40." selected="False" />
+            <SelectField field="Offense_rushing_1st." selected="False" />
+            <SelectField field="Defense_passing_Avg" selected="False" />
+            <SelectField field="Offense_passing_Avg" selected="False" />
+            <SelectField field="Defense_passing_Sck" selected="False" />
+            <SelectField field="Offense_offensive_line_rush_center_Pwr" selected="False" />
+            <SelectField field="Defense_rushing_Yds.G" selected="False" />
+            <SelectField field="Offense_offensive_line_rush_right_.10Y" selected="False" />
+            <SelectField field="Offense_field_goals_Pct_30.39" selected="False" />
+            <SelectField field="Game_ID" selected="False" />
+            <SelectField field="Percent_Chance_diff" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="846" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Year" />
+            <Field field="Team" />
+            <Field field="Playoff_Game" />
+            <Field field="Actual_Points" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Year" />
+            <Field field="Team" />
+            <Field field="Playoff_Game" />
+            <Field field="Actual_Points" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Year" selected="False" rename="Right_Year" input="Right_" />
+                <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
+                <SelectField field="Right_Playoff_Game" selected="False" rename="Right_Playoff_Game" input="Right_" />
+                <SelectField field="Right_Actual_Points" selected="False" rename="Right_Actual_Points" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="630" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Playoff_Game</FieldFind>
+          <FieldSearch>Old_Name</FieldSearch>
+          <ReplaceFoundField>New_Name</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="534" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="Old_Name" />
+            <Field name="New_Name" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Conference</c>
+              <c>Conf. Champ.</c>
+            </r>
+            <r>
+              <c>Superbowl</c>
+              <c>SuperBowl</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF Contains([Team], &quot;Rams&quot;) THEN &quot;Rams&quot; ELSE [Team] ENDIF" field="Team" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF Contains([Team], &quot;Charge&quot;) THEN &quot;Chargers&quot; ELSE [Team] ENDIF" field="Team" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Team = IF Contains([Team], "Rams") THEN "Rams" ELSE [Team] ENDIF
+Team = IF Conta...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="846" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Year" />
+            <Field field="Team" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Year" />
+            <Field field="Team" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Year" selected="False" rename="Right_Year" input="Right_" />
+                <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
+                <SelectField field="Right_Playoff_Game" selected="False" rename="Right_Playoff_Game" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="Score">
+        <Position x="1170" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">FINAL_SUPERBOWL_SCORES</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1422" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_7280_2944d988791347c68a0b1a0ba7f232fc_\Engine_2108_93e225784cae498d8e7ceecc94c6b6a7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Year" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings>
+        <Position x="1038" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model.name" />
+          <Value name="select.target">Actual_Points</Value>
+          <Value name="select.predictors">Year=False,Team=False,Playoff_Game=False,Actual_Points=False,David_Prediction=True,Matt_Prediction=True</Value>
+          <Value name="use.weights">False</Value>
+          <Value name="select.weights">Actual_Points</Value>
+          <Value name="marginal.plots">False</Value>
+          <Value name="plot.min.importance">2.5</Value>
+          <Value name="type.distribution">True</Value>
+          <Value name="type.continuous">True</Value>
+          <Value name="dist.gaussian">False</Value>
+          <Value name="dist.laplace">True</Value>
+          <Value name="dist.t">False</Value>
+          <Value name="t.df">4</Value>
+          <Value name="type.count">False</Value>
+          <Value name="type.binomial">False</Value>
+          <Value name="dist.bernoulli">True</Value>
+          <Value name="dist.adaboost">False</Value>
+          <Value name="type.multinomial">False</Value>
+          <Value name="n.trees">4000</Value>
+          <Value name="assess.cv">True</Value>
+          <Value name="num.folds">5</Value>
+          <Value name="n.cores">1</Value>
+          <Value name="assess.test">False</Value>
+          <Value name="train.fraction">50.0</Value>
+          <Value name="assess.oob">False</Value>
+          <Value name="bag.fraction">50.0</Value>
+          <Value name="shrinkage">0.0020</Value>
+          <Value name="interaction.depth">1</Value>
+          <Value name="n.minobsinnode">10</Value>
+          <Value name="rand.seed">1</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1290" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round([FINAL_SUPERBOWL_SCORES], 1)&#xA;" field="FINAL_SUPERBOWL_SCORES" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[FINAL_SUPERBOWL_SCORES = Round([FINAL_SUPERBOWL_SCORES], 1)
+
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="Score">
+        <Position x="1170" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">FINAL_SUPERBOWL_SCORES</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1290" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\david\AppData\Local\Temp\Engine_7280_2944d988791347c68a0b1a0ba7f232fc_\Engine_2108_774b1526626a4001a2656dce34984761_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings>
+        <Position x="930" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">97</Value>
+          <Value name="validation pct">3</Value>
+          <Value name="rand seed">666</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Reports" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="21" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="4" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="False" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Reports" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="24" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="24" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="11" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="False" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="47" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="47" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="32" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="40" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="40" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="42" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="42" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Join" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Join" />
+      <Destination ToolID="49" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="49" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="59" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Validation" />
+      <Destination ToolID="59" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Estimation" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Ensemble_Model_Final</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
